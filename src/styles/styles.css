@@ -1,0 +1,14 @@
+.nav-style {
+  line-height: 20px;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+}
+
+.logo-image {
+  height: 60px;
+}
+
+.cart {
+  margin-left: 100px;
+}
