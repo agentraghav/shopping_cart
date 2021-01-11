@@ -10,7 +10,7 @@
 }
 
 .cart {
-  margin-left: 100px;
+  margin-left: 80px;
 }
 
 .bk {
@@ -50,4 +50,9 @@
 
 .in-head {
   font-weight: 600;
+}
+
+.nav-links {
+  letter-spacing: 1px;
+  margin-right: 20px;
 }

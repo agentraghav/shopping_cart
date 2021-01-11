@@ -17,9 +17,15 @@ export const Header = () => {
           />
         </Navbar.Brand>
         <Nav className='justify-content-end'>
-          <Nav.Link href='#home'>Home</Nav.Link>
-          <Nav.Link href='#about'>About US</Nav.Link>
-          <Nav.Link href='#contact'>Contact Us</Nav.Link>
+          <Nav.Link className='nav-links' href='#home'>
+            Home
+          </Nav.Link>
+          <Nav.Link className='nav-links' href='#about'>
+            About US
+          </Nav.Link>
+          <Nav.Link className='nav-links' href='#contact'>
+            Contact Us
+          </Nav.Link>
           <Nav.Link className='cart' href='#pricing'>
             <i className='fa fa-shopping-cart' aria-hidden='true'></i>
           </Nav.Link>
