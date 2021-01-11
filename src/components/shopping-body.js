@@ -17,7 +17,7 @@ export const ShoppingBody = () => {
       </Row>
       <Row>
         <Col md={12}>
-          <h1 className='heading-main'>Featured Products</h1>
+          <h1 className='heading-main'>Deals Of The Day</h1>
         </Col>
       </Row>
     </>
