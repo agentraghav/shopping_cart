@@ -2,33 +2,35 @@ import React from 'react';
 import '../styles/styles.css';
 import { Nav } from 'react-bootstrap';
 import { Navbar } from 'react-bootstrap';
-import { Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import { Image } from 'react-bootstrap';
 export const Header = () => {
   return (
     <Navbar fixed='top' className='nav-style' expand='lg' variant='light'>
       <Container>
-        <Navbar.Brand href='#home'>
+        <Link to='/shopping_cart/'>
           <Image
             className='logo-image'
             src='https://cdn.shopify.com/s/files/1/1132/3440/t/4/assets/logo.png?v=16492789083930716568'
             responsive
           />
-        </Navbar.Brand>
+        </Link>
         <Nav className='justify-content-end'>
-          <Nav.Link className='nav-links' href='#home'>
-            Home
-          </Nav.Link>
-          <Nav.Link className='nav-links' href='#about'>
-            About US
-          </Nav.Link>
-          <Nav.Link className='nav-links' href='#contact'>
-            Contact Us
-          </Nav.Link>
-          <Nav.Link className='cart' href='#pricing'>
-            <i className='fa fa-shopping-cart' aria-hidden='true'></i>
-          </Nav.Link>
+          <Link to='/shopping_cart/'>
+            <li className='nav-links'>Home</li>
+          </Link>
+          <Link to='/shopping_cart/shop'>
+            <li className='nav-links'>Shop</li>
+          </Link>
+          <Link to='/shopping_cart/about'>
+            <li className='nav-links'>About Us</li>
+          </Link>
+          <Link to='/shopping_cart/cart'>
+            <li className='cart'>
+              <i className='fa fa-shopping-cart' aria-hidden='true'></i>
+            </li>
+          </Link>
         </Nav>
       </Container>
     </Navbar>

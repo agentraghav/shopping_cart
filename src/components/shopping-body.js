@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import '../styles/styles.css';
+
 export const ShoppingBody = () => {
   return (
     <>

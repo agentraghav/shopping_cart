@@ -10,7 +10,12 @@
 }
 
 .cart {
+  color: #383838;
   margin-left: 80px;
+}
+
+.cart:hover {
+  color: black;
 }
 
 .bk {
@@ -54,8 +59,15 @@
 }
 
 .nav-links {
+  text-decoration: none;
+  color: #383838;
   letter-spacing: 1px;
   margin-right: 20px;
+}
+
+.nav-links:hover {
+  text-decoration: underline;
+  color: black;
 }
 
 .heading-main {
