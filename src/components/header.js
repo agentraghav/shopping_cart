@@ -7,7 +7,7 @@ import { Container } from 'react-bootstrap';
 import { Image } from 'react-bootstrap';
 export const Header = () => {
   return (
-    <Navbar className='nav-style' expand='lg' variant='light'>
+    <Navbar fixed='top' className='nav-style' expand='lg' variant='light'>
       <Container>
         <Navbar.Brand href='#home'>
           <Image
