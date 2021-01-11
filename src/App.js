@@ -1,8 +1,16 @@
 import { Header } from './components/header';
+import { ShoppingBody } from './components/shopping-body';
+
 function App() {
   return (
     <div>
-      <Header />
+      <div>
+        <Header />
+      </div>
+
+      <div>
+        <ShoppingBody />
+      </div>
     </div>
   );
 }

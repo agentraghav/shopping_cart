@@ -12,3 +12,42 @@
 .cart {
   margin-left: 100px;
 }
+
+.bk {
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('https://marshesshopping.com/app/uploads/2017/07/Mens-Accessories-Header-1920-x-1080.jpg');
+}
+
+.heading {
+  margin-top: 100px;
+  margin-left: 200px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 42px;
+  line-height: 42px;
+  z-index: 2;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+
+.shop-link {
+  margin-top: 100px;
+  margin-left: 200px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  line-height: 32px;
+  z-index: 2;
+  font-weight: 400;
+  text-decoration: underline;
+}
+.shop-link:hover {
+  color: #265d9b;
+}
+
+.in-head {
+  font-weight: 600;
+}
