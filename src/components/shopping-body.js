@@ -10,7 +10,7 @@ export const ShoppingBody = () => {
           <h1 className='heading'>
             Season <span className='in-head'>Sale</span>
           </h1>
-          <Link to='/shop'>
+          <Link to='/shopping_cart/shop'>
             <p className='shop-link'>Shop Now</p>
           </Link>
         </Col>
@@ -22,7 +22,7 @@ export const ShoppingBody = () => {
       </Row>
       <Row>
         <Col md={4}>
-          <Link to='/shop'>
+          <Link to='/shopping_cart/shop'>
             <Image
               className='home-content'
               src='https://images.unsplash.com/photo-1523381294911-8d3cead13475?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max'></Image>
@@ -32,7 +32,7 @@ export const ShoppingBody = () => {
             <div>
               <span className='content-sub'>On Men's Clothing</span>
             </div>
-            <Link to='/shop'>
+            <Link to='/shopping_cart/shop'>
               <button className='man-butt'>
                 <i class='fa fa-shopping-bag' aria-hidden='true'></i> Shop-Now
               </button>
@@ -40,7 +40,7 @@ export const ShoppingBody = () => {
           </div>
         </Col>
         <Col md={4}>
-          <Link to='/shop'>
+          <Link to='/shopping_cart/shop'>
             <Image
               className='home-content'
               src='https://image.freepik.com/free-photo/stacked-blue-jeans-white-background_23-2147889060.jpg'></Image>
@@ -50,7 +50,7 @@ export const ShoppingBody = () => {
             <div>
               <span className='content-sub'>On Levis</span>
             </div>
-            <Link to='/shop'>
+            <Link to='/shopping_cart/shop'>
               <button className='man-butt'>
                 <i class='fa fa-shopping-bag' aria-hidden='true'></i> Shop-Now
               </button>
@@ -58,7 +58,7 @@ export const ShoppingBody = () => {
           </div>
         </Col>
         <Col md={4}>
-          <Link to='/shop'>
+          <Link to='/shopping_cart/shop'>
             <Image
               className='home-content'
               src='https://img5.goodfon.com/wallpaper/nbig/f/2c/adidas-krossovki-belyi-fon.jpg'></Image>
@@ -68,7 +68,7 @@ export const ShoppingBody = () => {
             <div>
               <span className='content-sub'>On Men's Footwear</span>
             </div>
-            <Link to='/shop'>
+            <Link to='/shopping_cart/shop'>
               <button className='man-butt'>
                 <i class='fa fa-shopping-bag' aria-hidden='true'></i> Shop-Now
               </button>
@@ -78,7 +78,7 @@ export const ShoppingBody = () => {
       </Row>
       <Row className='mid-cont'>
         <Col md={4}>
-          <Link to='/shop'>
+          <Link to='/shopping_cart/shop'>
             <Image
               className='home-content'
               src='https://images.unsplash.com/photo-1523381294911-8d3cead13475?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max'></Image>
@@ -88,7 +88,7 @@ export const ShoppingBody = () => {
             <div>
               <span className='content-sub'>On Men's Clothing</span>
             </div>
-            <Link to='/shop'>
+            <Link to='/shopping_cart/shop'>
               <button className='man-butt'>
                 <i class='fa fa-shopping-bag' aria-hidden='true'></i> Shop-Now
               </button>
@@ -96,7 +96,7 @@ export const ShoppingBody = () => {
           </div>
         </Col>
         <Col md={4}>
-          <Link to='/shop'>
+          <Link to='/shopping_cart/shop'>
             <Image
               className='home-content'
               src='https://image.freepik.com/free-photo/stacked-blue-jeans-white-background_23-2147889060.jpg'></Image>
@@ -106,7 +106,7 @@ export const ShoppingBody = () => {
             <div>
               <span className='content-sub'>On Levis</span>
             </div>
-            <Link to='/shop'>
+            <Link to='/shopping_cart/shop'>
               <button className='man-butt'>
                 <i class='fa fa-shopping-bag' aria-hidden='true'></i> Shop-Now
               </button>
@@ -114,7 +114,7 @@ export const ShoppingBody = () => {
           </div>
         </Col>
         <Col md={4}>
-          <Link to='/shop'>
+          <Link to='/shopping_cart/shop'>
             <Image
               className='home-content'
               src='https://img5.goodfon.com/wallpaper/nbig/f/2c/adidas-krossovki-belyi-fon.jpg'></Image>
@@ -124,7 +124,7 @@ export const ShoppingBody = () => {
             <div>
               <span className='content-sub'>On Men's Footwear</span>
             </div>
-            <Link to='/shop'>
+            <Link to='/shopping_cart/shop'>
               <button className='man-butt'>
                 <i class='fa fa-shopping-bag' aria-hidden='true'></i> Shop-Now
               </button>

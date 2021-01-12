@@ -20,7 +20,7 @@ export const Shop = () => {
           let { id, name, brand, price, imgsrc } = item;
           return (
             <Col style={{ marginTop: '20px' }} md={4} key={id}>
-              <Link to={`/shop/${id}`}>
+              <Link to={`/shopping_cart/shop/${id}`}>
                 <Image className='home-content' src={imgsrc}></Image>
               </Link>
               <div>
@@ -33,7 +33,7 @@ export const Shop = () => {
                     <i class='fas fa-rupee-sign' /> {price}
                   </p>
                   <div>
-                    <Link to={`/shop/${id}`}>
+                    <Link to={`/shopping_cart/shop/${id}`}>
                       <button className='man-butt-shop'>
                         <i class='fa fa-shopping-bag' aria-hidden='true'></i>{' '}
                         Buy-Now

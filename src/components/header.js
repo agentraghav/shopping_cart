@@ -10,7 +10,7 @@ export const Header = ({ getCartItems }) => {
   return (
     <Navbar fixed='top' className='nav-style' expand='lg' variant='light'>
       <Container>
-        <Link to='/'>
+        <Link to='/shopping_cart/'>
           <Image
             className='logo-image'
             src='https://cdn.shopify.com/s/files/1/1132/3440/t/4/assets/logo.png?v=16492789083930716568'
@@ -18,16 +18,16 @@ export const Header = ({ getCartItems }) => {
           />
         </Link>
         <Nav className='justify-content-end'>
-          <Link to='/'>
+          <Link to='/shopping_cart/'>
             <li className='nav-links'>Home</li>
           </Link>
-          <Link to='/shop'>
+          <Link to='/shopping_cart/shop'>
             <li className='nav-links'>Shop</li>
           </Link>
-          <Link to='/about'>
+          <Link to='/shopping_cart/about'>
             <li className='nav-links'>About Us</li>
           </Link>
-          <Link to='/cart'>
+          <Link to='/shopping_cart/cart'>
             <li className='cart'>
               <i className='fa fa-shopping-cart' aria-hidden='true'></i>
               {itemsInCart ? `${itemsInCart}` : null}
