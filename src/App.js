@@ -6,6 +6,7 @@ import { Footer } from './components/footer';
 import { Shop } from './components/shop';
 import { About } from './components/about';
 import { Item } from './components/item';
+import { Cart } from './components/cart';
 function App() {
   let [cartItems, setCartItems] = useState([]);
   const getCartItems = () => {
@@ -64,6 +65,23 @@ function App() {
         <Route
           path='/shopping_cart/shop/:itemID'
           render={(props) => <Item {...props} addItem={addItem} />}
+        />
+        <Route
+          path='/shopping_cart/shop/:itemID'
+          render={(props) => <Item {...props} addItem={addItem} />}
+        />
+        <Route
+          exact
+          path='/shopping_cart/cart'
+          render={(props) => (
+            <Cart
+              {...props}
+              cartItems={cartItems}
+              removeItem={removeItem}
+              addItem={addItem}
+              getCartItems={getCartItems}
+            />
+          )}
         />
       </Switch>
       <Footer />

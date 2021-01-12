@@ -14,7 +14,7 @@ export const Item = ({ match, addItem }) => {
         </Col>
         <Col md={6}>
           <h1 className='item-head'>{brand}</h1>
-          <hr />
+          <hr className='hr-item' />
           <p className='item-sub'>{name}</p>
           <p className='item-sub'>
             <i class='fas fa-rupee-sign' /> {price}
