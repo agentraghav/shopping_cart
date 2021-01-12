@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Header } from './components/header';
 import { Footer } from './components/footer';
 import { Shop } from './components/shop';
+import { About } from './components/about';
 function App() {
   let [cartItems, setCartItems] = useState([]);
   const getCartItems = () => {
@@ -53,6 +54,11 @@ function App() {
           path='/shopping_cart/shop'
           exact
           render={(props) => <Shop {...props} />}
+        />
+        <Route
+          path='/shopping_cart/about'
+          exact
+          render={(props) => <About {...props} />}
         />
       </Switch>
       <Footer />
