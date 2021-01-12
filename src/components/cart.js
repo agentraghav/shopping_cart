@@ -2,7 +2,6 @@ import React from 'react';
 import { Row, Col, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 export const Cart = ({ cartItems, removeItem, addItem, getCartItems }) => {
-  let itemsInCart = getCartItems();
   let cartTotal = cartItems
     .map((itemData) => itemData.price * itemData.quantity)
     .reduce((a, b) => a + b, 0);
@@ -39,7 +38,7 @@ export const Cart = ({ cartItems, removeItem, addItem, getCartItems }) => {
                       -
                     </button>
                     <p className='cart-inc-dec'>
-                      Quantity : {itemsInCart ? `${itemsInCart}` : 0}
+                      Quantity : {cartItem.quantity}
                     </p>
                     <button
                       className='cart-quan'
