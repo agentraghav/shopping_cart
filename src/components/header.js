@@ -5,8 +5,8 @@ import { Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import { Image } from 'react-bootstrap';
-export const Header = ({ getItemsInCart }) => {
-  let itemsInCart = getItemsInCart;
+export const Header = ({ getCartItems }) => {
+  let itemsInCart = getCartItems();
   return (
     <Navbar fixed='top' className='nav-style' expand='lg' variant='light'>
       <Container>
@@ -30,7 +30,7 @@ export const Header = ({ getItemsInCart }) => {
           <Link to='/shopping_cart/cart'>
             <li className='cart'>
               <i className='fa fa-shopping-cart' aria-hidden='true'></i>
-              {itemsInCart ? `(${itemsInCart})` : null}
+              {itemsInCart ? `${itemsInCart}` : null}
             </li>
           </Link>
         </Nav>
