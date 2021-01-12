@@ -1,11 +1,20 @@
 import React from 'react';
 import { Row, Col, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-export const Cart = ({ cartItems, removeItem, addItem, getCartItems }) => {
+export const Cart = ({
+  cartItems,
+  removeItem,
+  addItem,
+  getCartItems,
+  resetCart,
+}) => {
   let cartTotal = cartItems
     .map((itemData) => itemData.price * itemData.quantity)
     .reduce((a, b) => a + b, 0);
-
+  const handleLoad = (e) => {
+    alert('Thanks For Shopping');
+    resetCart();
+  };
   return (
     <>
       <Row className='cart-row'>
@@ -59,7 +68,11 @@ export const Cart = ({ cartItems, removeItem, addItem, getCartItems }) => {
               Total Amount : <i class='fas fa-rupee-sign' />
               {Math.round(cartTotal * 100) / 100}
             </p>
-            <button className='add-to-pay'>Pay</button>
+            <Link to='/shopping_cart/'>
+              <button onClick={handleLoad} className='add-to-pay'>
+                Pay
+              </button>
+            </Link>
           </Col>
         ) : (
           <Col md={12}>

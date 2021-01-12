@@ -12,6 +12,9 @@ function App() {
   const getCartItems = () => {
     return cartItems.map((item) => item.quantity).reduce((a, b) => a + b, 0);
   };
+  const resetCart = () => {
+    setCartItems([]);
+  };
 
   const addItem = (item) => {
     let itemExist = cartItems.find((cartItem) => cartItem.id === item.id);
@@ -80,6 +83,7 @@ function App() {
               removeItem={removeItem}
               addItem={addItem}
               getCartItems={getCartItems}
+              resetCart={resetCart}
             />
           )}
         />
