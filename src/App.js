@@ -3,6 +3,7 @@ import { ShoppingBody } from './components/shopping-body';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Header } from './components/header';
 import { Footer } from './components/footer';
+import { Shop } from './components/shop';
 function App() {
   let [cartItems, setCartItems] = useState([]);
   const getCartItems = () => {
@@ -41,12 +42,17 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Header />
+      <Header getCartItems={getCartItems} />
       <Switch>
         <Route
           path='/shopping_cart/'
           exact
           render={(props) => <ShoppingBody {...props} />}
+        />
+        <Route
+          path='/shopping_cart/shop'
+          exact
+          render={(props) => <Shop {...props} />}
         />
       </Switch>
       <Footer />

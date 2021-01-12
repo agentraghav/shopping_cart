@@ -187,3 +187,39 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 22px;
 }
+
+.shop-bg {
+  height: 500px;
+  background-position: center;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('https://www.wallpapertip.com/wmimgs/178-1781028_latest-men-fashion-wallpapers-fashion-men-wallpaper-hd.jpg');
+}
+
+.shop-head {
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 35px;
+  color: #353434;
+}
+
+.shop-head:hover {
+  text-decoration: none;
+}
+
+.shop-sub {
+  padding: 20px;
+  margin-left: 5%;
+  margin-top: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #353434;
+}
