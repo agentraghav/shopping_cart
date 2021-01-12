@@ -29,7 +29,9 @@ export const Shop = () => {
                   <p className='shop-sub'>{name}</p>
                 </div>
                 <div>
-                  <p className='shop-sub'>{price}</p>
+                  <p className='shop-sub'>
+                    <i class='fas fa-rupee-sign' /> {price}
+                  </p>
                 </div>
               </div>
             </Col>
