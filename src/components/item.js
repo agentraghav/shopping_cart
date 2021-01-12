@@ -31,7 +31,7 @@ export const Item = ({ match, addItem }) => {
           <button className='add-to' onClick={() => addItem(itemData)}>
             <i class='fas fa-shopping-bag'></i> Add To Cart
           </button>
-          <Link to='/shopping_cart/cart'>
+          <Link to='/cart'>
             <button className='add-to'>
               <i class='fa fa-check' aria-hidden='true'></i> Checkout
             </button>

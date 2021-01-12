@@ -50,32 +50,17 @@ function App() {
     <BrowserRouter>
       <Header getCartItems={getCartItems} />
       <Switch>
+        <Route path='/' exact render={(props) => <ShoppingBody {...props} />} />
+        <Route path='/shop' exact render={(props) => <Shop {...props} />} />
+        <Route path='/about' exact render={(props) => <About {...props} />} />
         <Route
-          path='/shopping_cart/'
-          exact
-          render={(props) => <ShoppingBody {...props} />}
-        />
-        <Route
-          path='/shopping_cart/shop'
-          exact
-          render={(props) => <Shop {...props} />}
-        />
-        <Route
-          path='/shopping_cart/about'
-          exact
-          render={(props) => <About {...props} />}
-        />
-        <Route
-          path='/shopping_cart/shop/:itemID'
+          path='/shop/:itemID'
           render={(props) => <Item {...props} addItem={addItem} />}
         />
-        <Route
-          path='/shopping_cart/shop/:itemID'
-          render={(props) => <Item {...props} addItem={addItem} />}
-        />
+
         <Route
           exact
-          path='/shopping_cart/cart'
+          path='/cart'
           render={(props) => (
             <Cart
               {...props}

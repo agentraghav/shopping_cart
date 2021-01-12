@@ -68,7 +68,7 @@ export const Cart = ({
               Total Amount : <i class='fas fa-rupee-sign' />
               {Math.round(cartTotal * 100) / 100}
             </p>
-            <Link to='/shopping_cart/'>
+            <Link to='/'>
               <button onClick={handleLoad} className='add-to-pay'>
                 Pay
               </button>
