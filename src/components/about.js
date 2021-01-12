@@ -5,6 +5,17 @@ export const About = () => {
     <>
       <Row className='about-bg'>
         <Col md={12}>
+          <h1
+            style={{
+              textAlign: 'center',
+              marginLeft: '0px',
+              marginTop: '100px',
+              marginBottom: '10px',
+              color: '#fff',
+            }}
+            className='heading-main'>
+            About US
+          </h1>
           <p className='about-head'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
