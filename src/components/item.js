@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import shopItems from '../data/data';
-import { Row, Col, Image, Button } from 'react-bootstrap';
+import { Row, Col, Image } from 'react-bootstrap';
 export const Item = ({ match, addItem }) => {
   let { itemID } = match.params;
   let itemData = shopItems.find((shopItem) => shopItem.id === itemID);

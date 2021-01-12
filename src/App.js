@@ -67,7 +67,6 @@ function App() {
               cartItems={cartItems}
               removeItem={removeItem}
               addItem={addItem}
-              getCartItems={getCartItems}
               resetCart={resetCart}
             />
           )}

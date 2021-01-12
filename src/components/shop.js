@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Row, Col, Container, Image } from 'react-bootstrap';
+import { Row, Col, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import shopItems from '../data/data';
 import '../styles/styles.css';

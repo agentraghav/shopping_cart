@@ -1,13 +1,7 @@
 import React from 'react';
 import { Row, Col, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-export const Cart = ({
-  cartItems,
-  removeItem,
-  addItem,
-  getCartItems,
-  resetCart,
-}) => {
+export const Cart = ({ cartItems, removeItem, addItem, resetCart }) => {
   let cartTotal = cartItems
     .map((itemData) => itemData.price * itemData.quantity)
     .reduce((a, b) => a + b, 0);
@@ -30,7 +24,7 @@ export const Cart = ({
           let { id, name, brand, price, imgsrc } = cartItem;
           return (
             <>
-              <Col>
+              <Col lg={12}>
                 <Col md={6}>
                   <Image className='cart-img' src={imgsrc} />
                 </Col>
