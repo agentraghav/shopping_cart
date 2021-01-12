@@ -59,8 +59,8 @@ export const Cart = ({ cartItems, removeItem, addItem, getCartItems }) => {
             <p className='pay'>
               Total Amount : <i class='fas fa-rupee-sign' />
               {Math.round(cartTotal * 100) / 100}
-              <button className='add-to-pay'>Pay</button>
             </p>
+            <button className='add-to-pay'>Pay</button>
           </Col>
         ) : (
           <Col md={12}>

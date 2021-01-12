@@ -406,11 +406,12 @@
   font-weight: 400;
   font-size: 18px;
   color: #fff;
-  margin-left: 50%;
+  margin-left: 45%;
   padding-left: 40px;
   padding-right: 40px;
   border-radius: 10px;
   padding-top: 10px;
+  margin-top: 20px;
   padding-bottom: 10px;
   background-color: #353434;
 }
