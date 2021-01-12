@@ -438,3 +438,21 @@
 .man-butt:hover {
   background-color: black;
 }
+
+.man-butt-shop {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #fff;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 10px;
+  padding-top: 10px;
+  margin-left: 30%;
+  padding-bottom: 10px;
+  background-color: #353434;
+}
+
+.man-butt-shop:hover {
+  background-color: black;
+}

@@ -19,7 +19,7 @@ export const Shop = () => {
         {displayItems.map((item) => {
           let { id, name, brand, price, imgsrc } = item;
           return (
-            <Col md={4} key={id}>
+            <Col style={{ marginTop: '20px' }} md={4} key={id}>
               <Link to={`/shopping_cart/shop/${id}`}>
                 <Image className='home-content' src={imgsrc}></Image>
               </Link>
@@ -29,9 +29,17 @@ export const Shop = () => {
                   <p className='shop-sub'>{name}</p>
                 </div>
                 <div>
-                  <p className='shop-sub'>
+                  <p style={{ marginTop: '0px' }} className='shop-sub'>
                     <i class='fas fa-rupee-sign' /> {price}
                   </p>
+                  <div>
+                    <Link to={`/shopping_cart/shop/${id}`}>
+                      <button className='man-butt-shop'>
+                        <i class='fa fa-shopping-bag' aria-hidden='true'></i>{' '}
+                        Buy-Now
+                      </button>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </Col>

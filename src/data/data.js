@@ -66,8 +66,7 @@ export default [
   },
   {
     id: '8',
-    name:
-      'Men Navy Blue & White Colourblocked Leather Grip Mid IDP Mid-Top Sneakers',
+    name: 'Men Navy Blue & White Leather Sneakers',
     brand: 'Puma',
     color: 'Navy Blue',
     price: 1799,
