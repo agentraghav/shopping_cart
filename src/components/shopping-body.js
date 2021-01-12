@@ -10,9 +10,9 @@ export const ShoppingBody = () => {
           <h1 className='heading'>
             Season <span className='in-head'>Sale</span>
           </h1>
-          <a className='shop-link' href='#'>
-            Shop Now
-          </a>
+          <Link to='/shopping_cart/shop'>
+            <p className='shop-link'>Shop Now</p>
+          </Link>
         </Col>
       </Row>
       <Row>
@@ -32,6 +32,11 @@ export const ShoppingBody = () => {
             <div>
               <span className='content-sub'>On Men's Clothing</span>
             </div>
+            <Link to='/shopping_cart/shop'>
+              <button className='man-butt'>
+                <i class='fa fa-shopping-bag' aria-hidden='true'></i> Shop-Now
+              </button>
+            </Link>
           </div>
         </Col>
         <Col md={4}>
@@ -45,6 +50,11 @@ export const ShoppingBody = () => {
             <div>
               <span className='content-sub'>On Levis</span>
             </div>
+            <Link to='/shopping_cart/shop'>
+              <button className='man-butt'>
+                <i class='fa fa-shopping-bag' aria-hidden='true'></i> Shop-Now
+              </button>
+            </Link>
           </div>
         </Col>
         <Col md={4}>
@@ -58,6 +68,11 @@ export const ShoppingBody = () => {
             <div>
               <span className='content-sub'>On Men's Footwear</span>
             </div>
+            <Link to='/shopping_cart/shop'>
+              <button className='man-butt'>
+                <i class='fa fa-shopping-bag' aria-hidden='true'></i> Shop-Now
+              </button>
+            </Link>
           </div>
         </Col>
       </Row>
@@ -73,6 +88,11 @@ export const ShoppingBody = () => {
             <div>
               <span className='content-sub'>On Men's Clothing</span>
             </div>
+            <Link to='/shopping_cart/shop'>
+              <button className='man-butt'>
+                <i class='fa fa-shopping-bag' aria-hidden='true'></i> Shop-Now
+              </button>
+            </Link>
           </div>
         </Col>
         <Col md={4}>
@@ -86,6 +106,11 @@ export const ShoppingBody = () => {
             <div>
               <span className='content-sub'>On Levis</span>
             </div>
+            <Link to='/shopping_cart/shop'>
+              <button className='man-butt'>
+                <i class='fa fa-shopping-bag' aria-hidden='true'></i> Shop-Now
+              </button>
+            </Link>
           </div>
         </Col>
         <Col md={4}>
@@ -99,6 +124,11 @@ export const ShoppingBody = () => {
             <div>
               <span className='content-sub'>On Men's Footwear</span>
             </div>
+            <Link to='/shopping_cart/shop'>
+              <button className='man-butt'>
+                <i class='fa fa-shopping-bag' aria-hidden='true'></i> Shop-Now
+              </button>
+            </Link>
           </div>
         </Col>
       </Row>
