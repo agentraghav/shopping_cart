@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { ShoppingBody } from './components/shopping-body';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Header } from './components/header';
+import { Footer } from './components/footer';
 function App() {
   let [cartItems, setCartItems] = useState([]);
   const getCartItems = () => {
@@ -48,6 +49,7 @@ function App() {
           render={(props) => <ShoppingBody {...props} />}
         />
       </Switch>
+      <Footer />
     </BrowserRouter>
   );
 }
