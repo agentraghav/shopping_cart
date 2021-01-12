@@ -5,6 +5,7 @@ import { Header } from './components/header';
 import { Footer } from './components/footer';
 import { Shop } from './components/shop';
 import { About } from './components/about';
+import { Item } from './components/item';
 function App() {
   let [cartItems, setCartItems] = useState([]);
   const getCartItems = () => {
@@ -59,6 +60,10 @@ function App() {
           path='/shopping_cart/about'
           exact
           render={(props) => <About {...props} />}
+        />
+        <Route
+          path='/shopping_cart/shop/:itemID'
+          render={(props) => <Item {...props} addItem={addItem} />}
         />
       </Switch>
       <Footer />
