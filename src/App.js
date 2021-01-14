@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Container } from 'react-bootstrap';
 import { ShoppingBody } from './components/shopping-body';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Header } from './components/header';
@@ -48,43 +49,45 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Header getCartItems={getCartItems} />
-      <Switch>
-        <Route
-          path='/shopping_cart/'
-          exact
-          render={(props) => <ShoppingBody {...props} />}
-        />
-        <Route
-          path='/shopping_cart/shop'
-          exact
-          render={(props) => <Shop {...props} />}
-        />
-        <Route
-          path='/shopping_cart/about'
-          exact
-          render={(props) => <About {...props} />}
-        />
-        <Route
-          path='/shopping_cart/shop/:itemID'
-          render={(props) => <Item {...props} addItem={addItem} />}
-        />
+      <Container fluid>
+        <Header getCartItems={getCartItems} />
+        <Switch>
+          <Route
+            path='/shopping_cart/'
+            exact
+            render={(props) => <ShoppingBody {...props} />}
+          />
+          <Route
+            path='/shopping_cart/shop'
+            exact
+            render={(props) => <Shop {...props} />}
+          />
+          <Route
+            path='/shopping_cart/about'
+            exact
+            render={(props) => <About {...props} />}
+          />
+          <Route
+            path='/shopping_cart/shop/:itemID'
+            render={(props) => <Item {...props} addItem={addItem} />}
+          />
 
-        <Route
-          exact
-          path='/shopping_cart/cart'
-          render={(props) => (
-            <Cart
-              {...props}
-              cartItems={cartItems}
-              removeItem={removeItem}
-              addItem={addItem}
-              resetCart={resetCart}
-            />
-          )}
-        />
-      </Switch>
-      <Footer />
+          <Route
+            exact
+            path='/shopping_cart/cart'
+            render={(props) => (
+              <Cart
+                {...props}
+                cartItems={cartItems}
+                removeItem={removeItem}
+                addItem={addItem}
+                resetCart={resetCart}
+              />
+            )}
+          />
+        </Switch>
+        <Footer />
+      </Container>
     </BrowserRouter>
   );
 }
